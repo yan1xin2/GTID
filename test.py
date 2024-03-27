@@ -172,7 +172,7 @@ class MyTrans(nn.Module):
         return out
 
 
-config = Config()
+config = Config() #自定义配置
 
 dataset = MyDatasetSLForTransDNNT(config.data_root_dir, config.sl_sum_dir, config.time_dir, config.names_file, config.pad_size, config.d_model, config.max_time_position, config.gran, config.log_e)
 size = len(dataset)
